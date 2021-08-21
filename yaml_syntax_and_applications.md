@@ -4,18 +4,22 @@ YAML is a text based human-readable language used mostly used for storing config
 
 YAML originally stood for *Yet Another Markup Language* but it was later changed to the recursive acronym *YAML Ain't Markup Language*  to highlight that it's usage is for data storage and transmission and not as a markup language.
 
-According to the [YAML specification](https://yaml.org/spec/history/2002-04-07.html), YAML is designed for human readability and interaction with scripting languages such as Perl and Python
+According to the [YAML specification](https://yaml.org/spec/history/2002-04-07.html), YAML is designed for human readability and interaction with scripting languages such as Perl and Python.
+
+In this tutorial, you will learn about YAML, it's syntax, and applications. After reading this tutorial, you will know enough to read, understand, and write YAML files.
 
 
 ## YAML Syntax
 
-The following are the basic rules of the YAML syntx:
+The following are the basic rules of the YAML syntax:
 1. Spaces and indentations are used to define document structure.
 2. Tabs are not allowed.
 3. YAML files use either `.yml` or `.yaml` file extensions.
 4. YAML is case sensitive.
 
 ### Data Types in YAML
+
+In this section, we’ll look at the YAML data types and their uses.
 
 ### Strings
 
@@ -227,6 +231,8 @@ YAML human readability and user friendliness has led to its widespread adoption 
 8. Spring Book
 
 
-## Conclusions
+## Conclusion
 
 YAML makes it easier to create human readable configuration files and interact with scripting languages such as Perl and Python compared to JSON or XML. The syntax YAML provides allow for creation of simple to complex data structures while still remaining human readable. It's adoption by popular DevOps tools has made learning YAML a productive skill.
+
+Thank you for reading this article. Please leave your thoughts in the comment section below.
