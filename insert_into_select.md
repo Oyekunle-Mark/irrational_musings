@@ -1,4 +1,4 @@
-# SQL INSERT INTO SELECT Statement - An Overview
+# SQL Insert Into Select Statement - An Overview
 
 Copying a large number of records from one table, or by joining more than one table, into another table is a frequently performed action in database systems. This straightforward operation can be performed in a number of ways. Many of the popular ORMs also have ways to chunk these records when the size becomes large.
 
@@ -10,7 +10,7 @@ After this tutorial, you will be able to use the statement to write large record
 
 To make the most of this article, you're expected to have a basic understanding of SQL. The code samples in this article will be written in the MySQL flavor of SQL. Doing the same in other database engines should require very few modifications.
 
-## Why Copy Data Between Tables?
+## Why copy data between tables?
 
 The need to copy data from one table to another can arise for a number of reasons. The most important reason I've had to use this statement was to populate a table that was meant to hold the result of joining multiple tables. This new table can be used for simple reporting purposes.
 
@@ -18,7 +18,7 @@ Reading data from this new table is a lot faster than performing the multi-table
 
 Another scenario where this statement would come in handy is when you need to build a table off of another one with some columns modified along the way. This statement shines when the table you're copying from has a lot of historic data and has hundreds of thousands of rows.
 
-## INSERT INTO SELECT In Action
+## Insert into select in action
 
 In this section, I will show you how to use the `INSERT INTO SELECT` statement. We will be creating some tables, writing into them, and using our shiny new SQL statement to copy data from some tables into another.
 
@@ -118,7 +118,7 @@ This produces this result
 ![](https://i.imgur.com/2R3ZHoK.png)
 
 
-## Writing the Result of Multi-Table Joins into Another Table With INSERT INTO SELECT
+## Writing the result of multi-table joins into another table with insert into select
 
 In this section, we will build on what we have learned in the previous section and use `INSERT INTO SELECT` with join statements.
 
@@ -156,7 +156,7 @@ A select query on `detailed_student_courses` will present us with this result:
 
 ## Conclusion
 
-Copying data between tables will continue to be a frequent operation performed by Developers. The `INSERT INTO SELECT` statement allows you to copy data from one table to another. This article has covered how to do use this statement to in simple and not so simple queries.
+Copying data between tables will continue to be a frequent operation performed by Developers. The `INSERT INTO SELECT` statement allows you to copy data from one table to another. This article has covered how to do use this statement in simple and not so simple queries.
 
 Thank you for reading all the way to the end. 😃
 
