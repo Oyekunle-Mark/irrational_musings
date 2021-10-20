@@ -1,6 +1,6 @@
 # Annotations and Type Checking in Python
 
-Python is a dynamically typed programming language. This means that type checking is done at run-time. [PEP 484](//https://www.python.org/dev/peps/pep-0484/) introduced type hints, which makes it possible to add type hints to variables and function signatures.
+Python is a dynamically typed programming language. This means that type checking is done at run-time. [PEP 484](https://www.python.org/dev/peps/pep-0484/) introduced type hints, which makes it possible to add type hints to variables and function signatures.
 
 In this article, we will be looking at how to add annotations and type checking to our Python code.
 
@@ -83,7 +83,7 @@ say_hello.py:2: error: Incompatible return value type (got "str", expected "int"
 Found 1 error in 1 file (checked 1 source file)
 ```
 
-Let's fix the error by changing expected return type back to `str` and type check our file again:
+Let's fix the error by changing the expected return type back to `str` and type check our file again:
 
 ```sh
 $ mypy say_hello.py
