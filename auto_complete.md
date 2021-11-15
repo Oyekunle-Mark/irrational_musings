@@ -1,8 +1,8 @@
 # Building a Simple Auto-Complete Program in Javascript
 
-Autocompletes, or Word completions, are ubiquitous. They help us complete our entries in so many places we have come to take them for granted. In this article, we will be learning enough to understand what autocomplete programs are and how they work. We will also cobble together a rudimentary autocomplete program that can efficiently suggest valid words that match our entries.
+Autocompletes, or Word completions, are ubiquitous. They help us complete our entries in so many places, that we've now taken them for granted. 
 
-We will also be learning about the trie data structure and the role it plays in building autocomplete programs.
+In this article, we will be learning enough to understand what autocomplete programs are and how they work. We will also cobble together a rudimentary autocomplete program that can efficiently suggest valid words that match our entries. We will also be learning about the trie data structure and the role it plays in building autocomplete programs.
 
 ## Prerequisites
 
@@ -21,6 +21,8 @@ Autocompletes find usage in a lot of software programs such as web browsers, ema
 ## Implementation of an autocomplete program
 
 In this section, and its sub-sections, we will move into the implementation of a usable autocomplete program. Starting out with an inefficient first attempt, we will improve and optimize it to deliver something that at its heart, represents what most practical autocompletes are built on.
+
+The code presented in this article can be found [here](https://github.com/Oyekunle-Mark/find_match) on GitHub
 
 ### A naive implementation
 
@@ -236,7 +238,7 @@ This will greatly improve the speed of searching and retrieval.
 
 ## Further improvements that can be made to the trie
 
-In this section, I will highlight what the problems with this autocomplete implementation are. I leave the improvements to the reader.
+In this section, I will highlight the problems with the autocomplete algorithm we've implemented so far. I leave the improvements to the reader.
 
 Even though the trie does not have the bottleneck of iterating through every valid word to find suggestions, building the trie would still require that all valid words be inserted into the trie. Our simple program holds the trie and all its nodes in memory. This would not be very practical for a huge word size as memory is limited on a single machine.
 
